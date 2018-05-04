@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: feng
+    url: jdbc:mysql://192.168.186.1:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
