@@ -4,3 +4,11 @@ spring:
     username: root
     password: feng
     url: jdbc:mysql://192.168.186.1:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+  data:
+    mongodb:
+      authentication-database: feng
+      database: feng
+      username: test
+      password: feng
+      host: 192.168.186.88
+      port: 27017
