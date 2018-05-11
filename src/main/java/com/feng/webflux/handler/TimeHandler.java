@@ -16,12 +16,12 @@ public class TimeHandler {
 
     public Mono<ServerResponse> getTime(ServerRequest request){
         return ServerResponse.ok()
-                .contentType(MediaType.TEXT_PLAIN)
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .body(Mono.just(String.format("现在的时间是：%s",LocalDateTime.now())),String.class);
     }
 
     public Mono<ServerResponse> getDate(ServerRequest request){
-        return ServerResponse.ok().contentType(MediaType.TEXT_PLAIN)
+        return ServerResponse.ok().contentType(MediaType.APPLICATION_JSON_UTF8)
                 .body(Mono.just(String.format("现在的日期是：%s",LocalDate.now())),String.class);
     }
 
